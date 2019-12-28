@@ -350,6 +350,6 @@ MigrationBackup/
 .ionide/
 
 #PDF
-*.pdf
+.pdf
 
 shit.txt
