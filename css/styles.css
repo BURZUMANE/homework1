@@ -1,0 +1,23 @@
+*{
+    
+}
+
+..container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* NAV MENU */
+
+.main-menu{
+    outline:1px solid red;
+}
+
+.main-meun-item{
+    display: inline-block;
+
+}
+
+.main-meun-item a{
+    text-decoration: none;
+}
