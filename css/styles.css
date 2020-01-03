@@ -5,6 +5,10 @@ body {
     color: #626262;
 }
 
+*{
+    outline: 2px dotted grey;
+}
+
 /* text styles */
 
 h2 {
@@ -45,11 +49,14 @@ h2 {
 
 section {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 901px;
 }
 
 .article {
-    max-width: 470px;
-    padding: 30px 30px 20px 30px;
+    max-width: 420px;
+    /* padding: 30px 30px 20px 30px; */
 }
 
 
