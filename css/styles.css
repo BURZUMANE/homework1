@@ -1,82 +1,125 @@
-
-/* main styles */
-body {
-    margin: 0px;
-    color: #626262;
+html {
+    box-sizing: border-box;
 }
 
-*{
-    outline: 2px dotted grey;
+*, *::before, *::after{
+    box-sizing: inherit;
 }
 
-/* text styles */
 
-h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 30px;
-}
-
-.category {
-    color: #b4ad9e;
+body{
+    font-family: 'PlayfairDisplay';
 }
 
 .container {
-    max-width: 960px;
+    width: 900px;
     margin: 0 auto;
 }
 
+/* NAV MENU */
+
+.main-nav{
+    margin-top: 142px;
+    margin-bottom: 116px;
+}
 .main-menu{
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
+    margin: 0;
+    padding: 0 120px;
 }
 
-.main-menu a{
+.main-meun-item{
+    display: inline-block;
+    padding: 0;
+    margin-right: 100px;
+}
+
+.main-meun-item:last-child{
+    margin-right: 0;
+}
+
+.main-meun-item a{
+    font-size: 14px;
+    font-family: "PlayfairDisplay";
+    text-transform: uppercase;
+    line-height: 1.714;
+    font-size: 17px;
     color: #626262;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    transition: 0.3s;
 }
 
-.main-menu a:hover{
+.main-meun-item a:hover, .main-meun-item a:focus{
     color: #03a9f4;
-}
-.main-content {
-    max-width: 960px;
+    outline: #03a9f4;
 }
 
-section {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 901px;
+/* SECTION */
+
+.articles{
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    margin-bottom: 58px;
 }
 
-.article {
-    max-width: 420px;
-    /* padding: 30px 30px 20px 30px; */
+article{
+    display: inline-block;
+    width: 420px;
+    padding: 0;
+    margin-right: 60px;
 }
 
-
-.load-more{
-    display: flex;
-    justify-content: space-around;
-    
+article:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 72px;    
 }
 
-.load-more button{
-    background-color: #ffffff;
-    border: 1px solid #626262;
-    color: #626262;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    opacity: 0.6;
+.article:nth-child(2n){
+    margin-right: 0;
 }
 
-.load-more button:hover{
-    opacity: 1
+.articles h2{
+    font-size: 30px;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98);
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  
+
+.articles p{
+    font-size: 14px;
+    color: rgb(98, 98, 98);
+    line-height: 1.714;
+    margin: 0;
+    padding: 0;
+      
 }
+
+p.category {
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: #b4ad9e;
+    text-transform: uppercase;
+  }
+  
+
+  /* LOAD MORE BUTTON */
+
+  .load-more-btn{
+      display: block;
+      background-color: #fff;
+      border-width: 1px;
+      border-color: rgb(98, 98, 98);
+      border-style: solid;
+      width: 162px;
+      height: 58px;
+      margin: 0 auto;
+      cursor: pointer;
+  }
+
+  .load-more-btn:hover, .load-more-btn:focus{
+    color: #03a9f4;
+    border-color: #03a9f4;
+    outline: transparent;
+
+  }
+  
